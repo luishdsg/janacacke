@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="/src/1421912562-1516899377.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jana-cacke</title>
+</head>   
+<style>
+       * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a,a:hover{
+  text-decoration: none;
+  color: none;
+}
+body {
+  min-height: 100vh;
+  background: #f8f5e9;
+}
+       .slider {
+  position: relative;
+  max-height:800px; 
+  width: 100%;
+  overflow: hidden;
+  margin: auto auto;
+}
+
+.slider:hover > .button-wrapper {
+  width: 100%;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.item-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  flex-basis: 100%;
+}
+
+.button-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 54%;
+  transform: translateX(-50%) translateY(calc(-50% - 25px));
+  transition: width 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0);
+  width: 50%;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+
+.nav{
+    padding: 25px 100px 25px 15% ;
+}
+.z-10{
+    z-index: 10;
+}
+.pl-3{
+    padding-left: 1rem;
+}
+.pl-4{
+    padding-left: 4.1rem;
+}
+.borders{
+    border-radius: 1rem;
+    height: auto;
+    width: 75%;
+    cursor: pointer;
+}
+.bord{
+  border-radius: 1rem;
+
+}
+.shadows{
+    box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.192)!important;
+}
+
+.comprar{
+    border: none;
+    border-radius: 10rem;
+    background: #e91e63;
+    width: 80%;
+    margin: 1rem 0;
+    color: white;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+}
+.comprar:hover{
+    box-shadow: 0 0 2rem .5rem rgba(255, 0, 170, 0.438)!important;
+}
+.back{
+    border: 1px solid #e91e63;
+    border-radius: 10rem;
+    background: #00000000;
+    width: 80%;
+    margin: 1rem 0;
+     color: #e91e63;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+}
+.back:hover{
+    background: #e91e6241;
+   
+}
+
+.ph-2{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+h6 span{
+  color: rgb(0, 102, 218);
+  cursor:pointer;
+}
+
+.info-cho{
+  animation: id .3s;
+}
+
+@keyframes id {
+  0% { margin-top: -50px; opacity: .3; }
+  100% { margin-top: 0; opacity: 1; }
+}
+
+
+   </style>
+<body id="body">
+    <header class="w-100 h-auto d-flex  top-0 z-10">
+        <nav class="nav w-100 h-auto d-flex justify-content-between">
+            <div class="w-auto h-25">
+                <a name="start"><img style="height: 100px;" class="w-auto" src="./src/1421912562-1516899377.png"/></a>
+            </div>
+            <div class="nav-links mt-4 d-flex align-items-center align-content-center">
+               
+                <blockquote class="blockquote">
+                    <p class="mb-0">Crie novas lembranças com um bolo ao seu lado</p>
+                   <br/>
+                    <footer class="blockquote-footer">Jana<cite title="Source Title"> - 2021</cite></footer>
+                  </blockquote>
+             
+            </div>
+        </nav>
+
+    </header>
+    <main id="main">
+        <div class="slider">
+            <div class="item-wrapper">
+            <img src="./src/104436060_112965483792677_7688759056199703916_n.jpg"/>
+            <img src="./src/5fbd7b9d79f23ef7f7b1b8428202326f.jpg"/>
+            <img src="./src/receitas-faceis-e-rapidas-bolo-floresta-negra-no-pote.jpg"/>    
+
+            </div>
+            <div class="button-wrapper">
+              <button class="btns" id="next">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="btns" id="previous">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+         
+          </div>
+          <article class="container">
+            <div class="row p-5 mt-5">
+                <div class="col d-flex align-items-center align-center">
+                     <img src="./src/natal.gif" class="w-50 h-auto"/>
+                  <div class="align-items-center align-center ">
+                    <h3 class="pl-3">Promoção de Natal</h3>
+                  <h5 class="pl-3">Pague 3 leve 4</h5>
+                  </div>
+                  
+                </div>
+                </div>
+                <br/>
+                <div class="w-100 bord w3-black align-items-center text-center align-center">
+                  <h5 class="text-light p-3">Q 02, Lote 50 St.este GAMA</h5>
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-sm">
+<div class="w-100 p-4 h-auto">
+    <div class="w-100 text-center h-auto ">
+        <img id="imagem" class="borders shadows" src="./src/nin.jpg"/>
+    </div>
+    <div id="p1" class="info-cho">
+        <h4 class="title-cho p-5">Leite Ninho</h4>
+        <h6 class="ph-2" >Calda de chocolate com leite condensado, leite em pó ninho, manteiga e creme de leite </h6>
+        <div class="row">
+            <div class="col text-center">
+              <button onclick="comprar()" type="button" class="comprar">Comprar</button>
+            </div>
+          </div>
+    </div>
+
+    <div id="p2" style="display: none;" class="info-cho ">
+      <h6 class="title-cho p-5"><svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7"><path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/><path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/><path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/><path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/></svg>
+        :  03024221107</h6>
+      <h6 class="ph-2 align-items-center" >Faça um PIX de $5 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
+      <div class="row">
+          <div class="col text-center">
+            <button onclick="back()" type="button" class="back">Voltar</button>
+          </div>
+        </div>
+  </div>
+</div>
+              </div>
+              <div class="col-sm">
+                <div class="w-100 p-4 h-auto">
+                    <div class="w-100 text-center h-auto ">
+                        <img id="imagem" class="borders shadows" src="./src/cho.jpg"/>
+                    </div>
+                    <div id="p12" class="info-cho">
+                        <h4 class="title-cho p-5">Chocolate</h4>
+                        <h6 class="ph-2" >Recheio de cobertura de brigadeiro, com leite condensado, manteiga e chocolate em pó misturado com creme de leite.</h6>
+                        <div class="row">
+                            <div class="col text-center">
+                              <button onclick="comprar2()" type="button" class="comprar">Comprar</button>
+                            </div>
+                          </div>
+                    </div>
+                
+                    <div id="p22" style="display: none;" class="info-cho ">
+                      <h6 class="title-cho p-5"><svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7"><path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/><path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/><path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/><path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/><path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/></svg>
+                        : 03024221107</h6>
+                      <h6 class="ph-2 align-items-center" >Faça um PIX de $5 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
+                      <div class="row">
+                          <div class="col text-center">
+                            <button onclick="back2()" type="button" class="back">Voltar</button>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                              </div>
+            
+             
+            </div>
+        </article>
+           
+    </main>
+    <footer class="text-center w3-black pt-3" id="footer">
+<p class="text-light">Obrigado por compar na <a href="#start" class="text-info">JANA CACKE</span></p>
+
+<div class="w-100 p-2 text-center">
+  <h6>@2021 jana cacke</h6>
+</div>
+
+    </footer>
+<script>
+  
+  function comprar2(){
+                      var p12 = document.getElementById('p12').style.display = 'none'
+                      var p22 = document.getElementById('p22').style.display = 'block'
+                    }
+                    function back2(){
+                      var p12 = document.getElementById('p12').style.display = 'block'
+                      var p22 = document.getElementById('p22').style.display = 'none'
+                    }
+    function comprar(){
+      var p1 = document.getElementById('p1').style.display = 'none'
+      var p2 = document.getElementById('p2').style.display = 'block'
+    }
+    function back(){
+      var p1 = document.getElementById('p1').style.display = 'block'
+      var p2 = document.getElementById('p2').style.display = 'none'
+    }
+$("#imagem").bind('mouseover',function(){
+    
+    $(this).animate({width:"100%"});
+
+});
+$("#imagem").bind('mouseout',function(){
+ 
+    $(this).animate({width:"75%"});
+});
+$("#imagem2").bind('mouseover',function(){
+    
+    $(this).animate({width:"100%"});
+
+});
+$("#imagem2").bind('mouseout',function(){
+ 
+    $(this).animate({width:"75%"});
+});
+    
+const slider = document.querySelector(".slider");
+const sliderContent = document.querySelector(".item-wrapper");
+const sliderItems = sliderContent.querySelectorAll("img");
+const itemCount = sliderItems.length;
+const prevBtn = document.querySelector("#previous");
+const nextBtn = document.querySelector("#next");
+
+let currentIndex = 0;
+
+const handleButtonClick = (direction) => {
+  if (direction === "left") {
+    currentIndex++;
+
+    if (currentIndex > itemCount - 1) {
+      currentIndex = 0;
+    }
+  } else {
+    currentIndex--;
+
+    if (currentIndex < 0) {
+      currentIndex = itemCount - 1;
+    }
+  }
+
+  moveSlide();
+  styleIndicator();
+};
+
+const handleIndicatorClick = (e) => {
+  if (!e.target.classList.contains("indicator")) return;
+
+  currentIndex = e.target.dataset.index;
+
+  moveSlide();
+  styleIndicator();
+};
+
+
+
+const moveSlide = () => {
+  const sliderWidth = slider.clientWidth;
+  sliderContent.style.transform = `translateX(-${
+    currentIndex * sliderWidth
+  }px)`;
+};
+
+const addEventListeners = () => {
+  prevBtn.addEventListener("click", () => handleButtonClick("left"));
+  nextBtn.addEventListener("click", () => handleButtonClick("right"));
+  indicatorWrapper.addEventListener("click", handleIndicatorClick);
+};
+
+const init = () => {
+  addEventListeners();
+};
+
+init();
+
+</script>
+</body>
+</html>
