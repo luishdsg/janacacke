@@ -166,24 +166,21 @@
         color: black;
     }
     
-    .scrolling-wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-    }
-    
     .cakes {
-        border-radius: 2rem;
+        border-radius: 1rem;
         height: fit-content;
-        margin: 1rem;
-        box-shadow: -1px -1px 21px -8px black;
+        margin: 1rem .4rem;
         max-width: 250px;
+        border-bottom: 1px solid gray;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
     }
     
     .pic_cake {
-        border-radius: 2rem 2rem 0 0;
+        border-radius: 1rem 1rem 0 0;
         max-width: 250px;
         height: auto;
+        width: 100%;
     }
     
     .buy {
@@ -192,7 +189,8 @@
         color: white;
         font-weight: bold;
         outline: none;
-        padding: 10px 13px;
+        margin: 0 0.3rem;
+        padding: 9px 15px;
         transition: 0.3s;
     }
     
@@ -223,6 +221,12 @@
         padding: 8px 12px;
         outline: none;
         color: rgb(179, 0, 89);
+    }
+    
+    .text-capitalize {
+        font-weight: 700;
+        font-family: 'Poppins';
+        padding: 0 10%;
     }
 </style>
 
@@ -323,31 +327,24 @@
         <h6>bolo?</h6>
     </header>
     <article id="articm" class="justify-content-between ph-3 w-100 h-auto align-items-center d-flex">
-        <div class="row d-flex align-items-center">
-            <div class="col text-center">
-                <button id="bolos" style="background:rgb(255, 31, 143); color: white;" onclick="Vbolos();" class="cat">Bolos</button>
-            </div>
-            <div class="col  text-center">
-                <button id="pave" onclick="Vpave();" class="cat">Pavês</button>
-            </div>
-            <div class="col  text-center">
-                <button class="cat" onclick="Vtortas();" id="tortas">Tortas</button>
-            </div>
+        <div class="w-auto h-100 d-flex align-items-center"><img src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5de7ce5d154e7e36ea67a77f_Christmastree.gif" class="w-25 h-auto" />
+            <h2 class="w-100 d-flex align-items-center" style="padding-left: 1rem;  font-weight: bold; font-size:20px;">Boas<span style="color: rgb(179, 0, 89);"> Festas!</span></h6>
         </div>
     </article>
-    <!-- BOLOS -->
-    <div id="Mbolos" class="w-100 h-auto">
-        <div class="scrolling-wrapper">
+
+    <main class="w-100 d-flex">
+        <div class="w-50 ">
             <div class="cakes">
                 <img src="https://i.ibb.co/xG5ZKr8/cho.jpg" class="pic_cake" />
-                <div class="row p-4">
+                <div class="row pt-4 pb-4 ph">
                     <div class="col">
-                        <h6 class="text-capitalize font-weight-bold">Bolo de Chocolate</h6>
+                        <h6 class="text-capitalize text-dark font-weight-bold">Bolo de Chocolate</h6>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$5</div>
-                        <button onclick="buychoco()" class="buy bord-20">comprar</button>
+                    <div class="col align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$5
+                            <button onclick="buychoco()" class="buy bord-20">comprar</button>
+                        </div>
                     </div>
                     <div class="w-100"></div>
                     <div class="col">
@@ -377,14 +374,14 @@
 
             <div class="cakes">
                 <img src="https://receitasgostosas.com/wp-content/uploads/2017/12/bolo-de-pote.jpg" class="pic_cake" />
-                <div class="row p-4">
+                <div class="row pt-4 pb-4 ph">
                     <div class="col">
                         <h6 class="text-capitalize font-weight-bold">Bolo de Ninho</h6>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$5</div>
-                        <button onclick="buyninho()" class="buy bord-20">comprar</button>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$5 <button onclick="buyninho()" class="buy bord-20">comprar</button></div>
+
                     </div>
                     <div class="w-100"></div>
                     <div class="col">
@@ -414,14 +411,14 @@
 
             <div class="cakes">
                 <img src="https://i.ibb.co/bPt7Bby/33cc231959f91bab7805f93c9638a905.jpg" class="pic_cake" />
-                <div class="row p-4">
+                <div class="row pt-4 pb-4 ph">
                     <div class="col">
                         <h6 class="text-capitalize font-weight-bold">Bolo de Abacaxi</h6>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$5</div>
-                        <button onclick="buyaba()" class="buy bord-20">comprar</button>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$5 <button onclick="buyaba()" class="buy bord-20">comprar</button></div>
+
                     </div>
                     <div class="w-100"></div>
                     <div class="col">
@@ -451,14 +448,14 @@
 
             <div class="cakes">
                 <img src="https://i.ibb.co/w0GYVPZ/usuario-1714-3061db711a3edaf1eb590977bb0c82f5.jpg" class="pic_cake" />
-                <div class="row p-4">
+                <div class="row pt-4 pb-4 ph">
                     <div class="col">
                         <h6 class="text-capitalize font-weight-bold">Bolo Pudin</h6>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buypudin()" class="buy bord-20">comprar</button>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buypudin()" class="buy bord-20">comprar</button></div>
+
                     </div>
                     <div class="w-100"></div>
                     <div class="col">
@@ -485,175 +482,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- PAVE -->
-    <div id="Mpave" style="display: none;" class="w-100 h-auto">
-        <div class="scrolling-wrapper">
-            <div class="cakes">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_955580-MLB25739629789_072017-O.jpg" class="pic_cake" />
-                <div class="row p-4">
-                    <div class="col">
-                        <h6 class="text-capitalize font-weight-bold">Pavê de Chocolate <br/> <span class="text-danger">(%50 puro)</span></h6>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buyPc()" class="buy bord-20">comprar</button>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                        <div id="pc" class="inf" style="text-align: -webkit-center; display: none;">
-                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
-                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
-                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
-                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
-                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
-                            </svg>: 03024221107</h6>
-                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
-                            <div class="row">
-                                <div class="col text-center">
-                                    <button onclick="buychoco()" type="button" class="buy bord-20">Voltar</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cakes">
-                <img src="https://img.elo7.com.br/product/original/34D2459/bolo-de-pote-bolo-de-pote.jpg" class="pic_cake" />
-                <div class="row p-4">
-                    <div class="col">
-                        <h6 class="text-capitalize font-weight-bold">pave de chocolate com brigadeiro</h6>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buyPcb()" class="buy bord-20">comprar</button>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                        <div id="pcb" class="inf h-fit" style="text-align: -webkit-center; display: none;">
-                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
-                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
-                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
-                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
-                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
-                            </svg>: 03024221107</h6>
-                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
-                            <div class="row">
-                                <div class="col text-center">
-                                    <button onclick="buyaba()" type="button" class="buy bord-20">Voltar</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cakes">
-                <img src="https://p7m4z9n9.stackpathcdn.com/wp-content/uploads/2020/06/bombomdetravessa.jpg" class="pic_cake" />
-                <div class="row p-4">
-                    <div class="col">
-                        <h6 class="text-capitalize font-weight-bold">Pavê de chocolate com Morango</h6>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buyPcm()" class="buy bord-20">comprar</button>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                        <div id="pcm" class="inf" style="text-align: -webkit-center; display: none;">
-                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
-                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
-                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
-                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
-                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
-                            </svg>: 03024221107</h6>
-                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
-                            <div class="row">
-                                <div class="col text-center">
-                                    <button onclick="buyninho()" type="button" class="buy bord-20">Voltar</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cakes">
-                <img src="https://i.ibb.co/JnmKQ9V/112268-original.jpg" class="pic_cake" />
-                <div class="row p-4">
-                    <div class="col">
-                        <h6 class="text-capitalize font-weight-bold">Pavê de chocolate <br/> com coco</h6>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buyPcc()" class="buy bord-20">comprar</button>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                        <div id="pcc" class="inf h-fit" style="text-align: -webkit-center; display: none;">
-                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
-                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
-                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
-                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
-                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
-                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
-                            </svg>: 03024221107</h6>
-                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
-                            <div class="row">
-                                <div class="col text-center">
-                                    <button onclick="buyaba()" type="button" class="buy bord-20">Voltar</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- TORTAS -->
-    <div id="Mtortas" style="display: none;" class="w-100 h-auto">
-        <div class="scrolling-wrapper">
             <div class="cakes">
                 <img src="https://i.ibb.co/YDfBs7b/acd7a9792491a1aba0b20775c1da21b5.jpg" class="pic_cake" />
-                <div class="row p-4">
+                <div class="row pt-4 pb-4 ph">
                     <div class="col">
                         <h6 class="text-capitalize font-weight-bold">Torta de chocolate com limão</h6>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buyTcl()" class="buy bord-20">comprar</button>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buyTcl()" class="buy bord-20">comprar</button></div>
                     </div>
                     <div class="w-100"></div>
                     <div class="col">
@@ -672,7 +510,7 @@
                             <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
                             <div class="row">
                                 <div class="col text-center">
-                                    <button onclick="buychoco()" type="button" class="buy bord-20">Voltar</button>
+                                    <button onclick="buyTcl()" type="button" class="buy bord-20">Voltar</button>
                                 </div>
                             </div>
 
@@ -683,14 +521,14 @@
 
             <div class="cakes">
                 <img src="https://i.ibb.co/WWCxjLV/maxresdefault.jpg" class="pic_cake" />
-                <div class="row p-4">
+                <div class="row pt-4 pb-4 ph">
                     <div class="col">
                         <h6 class="text-capitalize font-weight-bold">Torta de chocolate com abacaxi</h6>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buyTca()" class="buy bord-20">comprar</button>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buyTca()" class="buy bord-20">comprar</button></div>
+
                     </div>
                     <div class="w-100"></div>
                     <div class="col">
@@ -709,7 +547,47 @@
                             <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
                             <div class="row">
                                 <div class="col text-center">
-                                    <button onclick="buyninho()" type="button" class="buy bord-20">Voltar</button>
+                                    <button onclick="buyTca()" type="button" class="buy bord-20">Voltar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="w-50">
+            <div class="cakes">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_955580-MLB25739629789_072017-O.jpg" class="pic_cake" />
+                <div class="row pt-4 pb-4 ph">
+                    <div class="col">
+                        <h6 class="text-capitalize font-weight-bold">Pavê de Chocolate <br/> <span class="text-danger">(%50 puro)</span></h6>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buyPc()" class="buy bord-20">comprar</button></div>
+
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div id="pc" class="inf" style="text-align: -webkit-center; display: none;">
+                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
+                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
+                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
+                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
+                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
+                            </svg>: 03024221107</h6>
+                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button onclick="buyPc()" type="button" class="buy bord-20">Voltar</button>
                                 </div>
                             </div>
 
@@ -719,15 +597,125 @@
             </div>
 
             <div class="cakes">
+                <img src="https://img.elo7.com.br/product/original/34D2459/bolo-de-pote-bolo-de-pote.jpg" class="pic_cake" />
+                <div class="row pt-4 pb-4 ph">
+                    <div class="col">
+                        <h6 class="text-capitalize font-weight-bold">pave de chocolate com brigadeiro</h6>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buyPcb()" class="buy bord-20">comprar</button></div>
+
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div id="pcb" class="inf h-fit" style="text-align: -webkit-center; display: none;">
+                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
+                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
+                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
+                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
+                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
+                            </svg>: 03024221107</h6>
+                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button onclick="buyPcb()" type="button" class="buy bord-20">Voltar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cakes">
+                <img src="https://p7m4z9n9.stackpathcdn.com/wp-content/uploads/2020/06/bombomdetravessa.jpg" class="pic_cake" />
+                <div class="row pt-4 pb-4 ph">
+                    <div class="col">
+                        <h6 class="text-capitalize font-weight-bold">Pavê de chocolate com Morango</h6>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buyPcm()" class="buy bord-20">comprar</button></div>
+
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div id="pcm" class="inf" style="text-align: -webkit-center; display: none;">
+                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
+                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
+                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
+                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
+                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
+                            </svg>: 03024221107</h6>
+                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button onclick="buyPcm()" type="button" class="buy bord-20">Voltar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cakes">
+                <img src="https://i.ibb.co/JnmKQ9V/112268-original.jpg" class="pic_cake" />
+                <div class="row pt-4 pb-4 ph">
+                    <div class="col">
+                        <h6 class="text-capitalize font-weight-bold">Pavê de chocolate <br/> com coco</h6>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buyPcc()" class="buy bord-20">comprar</button></div>
+
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div id="pcc" class="inf h-fit" style="text-align: -webkit-center; display: none;">
+                            <h6 class="text-capitalize font-weight-boldtitle-cho p-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="auto" viewBox="0 0 952.77 338.7">
+                                <path d="M393.22,316.26V122a64.71,64.71,0,0,1,64.71-64.71l57.35.08A64.62,64.62,0,0,1,579.77,122v41.34a64.72,64.72,0,0,1-64.71,64.72H434" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M595.8,57.28h24.88a26.56,26.56,0,0,1,26.56,26.56v145.1" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M641.9,34.8,630.62,23.51a7.16,7.16,0,0,1,0-10.13L641.9,2.1a7.18,7.18,0,0,1,10.15,0l11.27,11.28a7.16,7.16,0,0,1,0,10.13L652,34.8a7.17,7.17,0,0,1-10.14,0" fill="#32bcad"/>
+                                <path d="M695,57.15h24.67a47.85,47.85,0,0,1,33.84,14l57.71,57.71a19.13,19.13,0,0,0,27.07,0l57.5-57.49a47.81,47.81,0,0,1,33.83-14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M695,227.67h24.67a47.86,47.86,0,0,0,33.84-14l57.71-57.71a19.15,19.15,0,0,1,27.07,0l57.5,57.5a47.84,47.84,0,0,0,33.83,14h20.06" fill="none" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.26"/>
+                                <path d="M246.13,264.53A46.07,46.07,0,0,1,213.35,251L166,203.62a9,9,0,0,0-12.44,0l-47.51,47.51A46.09,46.09,0,0,1,73.27,264.7H64l60,60a48,48,0,0,0,67.81,0l60.12-60.13Z" fill="#32bcad"/>
+                                <path d="M73.28,97.09a46.08,46.08,0,0,1,32.78,13.57l47.51,47.52a8.81,8.81,0,0,0,12.44,0l47.34-47.34a46,46,0,0,1,32.78-13.58h5.7L191.71,37.14a47.94,47.94,0,0,0-67.81,0L64,97.09Z" fill="#32bcad"/>
+                                <path d="M301.56,147l-36.33-36.33a7,7,0,0,1-2.58.52H246.13a32.62,32.62,0,0,0-22.93,9.5L175.86,168a22.74,22.74,0,0,1-32.13,0L96.21,120.51A32.62,32.62,0,0,0,73.28,111H53a7.12,7.12,0,0,1-2.44-.49L14,147a48,48,0,0,0,0,67.81l36.48,36.48a6.85,6.85,0,0,1,2.44-.49H73.28a32.63,32.63,0,0,0,22.93-9.51l47.51-47.51c8.59-8.58,23.56-8.58,32.14,0l47.34,47.33a32.62,32.62,0,0,0,22.93,9.5h16.52a6.9,6.9,0,0,1,2.58.52l36.33-36.33a47.94,47.94,0,0,0,0-67.81" fill="#32bcad"/>
+                            </svg>: 03024221107</h6>
+                            <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button onclick="buyPcc()" type="button" class="buy bord-20">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cakes">
                 <img src="https://i.ibb.co/ZG5jHmf/torta-prest-gio-5a.png" class="pic_cake" />
-                <div class="row p-4">
+                <div class="row pt-4 pb-4 ph">
                     <div class="col">
                         <h6 class="text-capitalize font-weight-bold">torta de chocolate com <br/> coco</h6>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col d-flex align-items-center justify-content-between pl-5 pr-5">
-                        <div style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45</div>
-                        <button onclick="buyTcc()" class="buy bord-20">comprar</button>
+                    <div class="col  d-flex align-items-center justify-content-between pl-5 pr-5">
+                        <div class="d-flex align-items-center" style="font-size: 20px; font-weight: bold; color: rgb(255, 76, 106);">$45 <button onclick="buyTcc()" class="buy bord-20">comprar</button></div>
+
                     </div>
                     <div class="w-100"></div>
                     <div class="col">
@@ -746,7 +734,7 @@
                             <h6 class="text-capitalize font-weight-boldph-2 align-items-center">Faça um PIX de $45 e envie o comprovante com seu nome para <span>(61)993410398</span></h6>
                             <div class="row">
                                 <div class="col text-center">
-                                    <button onclick="buyaba()" type="button" class="buy bord-20">Voltar</button>
+                                    <button onclick="buyTcc()" type="button" class="buy bord-20">Voltar</button>
                                 </div>
                             </div>
 
@@ -755,7 +743,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
 
     <script>
